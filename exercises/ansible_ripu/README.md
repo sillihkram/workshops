@@ -68,7 +68,7 @@ The workshop is composed of three sections each of which includes a number of ex
 
 ## Workshop Navigation
 
-Your will find links to the previous and next exercises at the bottom of each exercise page. Click the link below to get started.
+You will find links to the previous and next exercises at the bottom of each exercise page. Click the link below to get started.
 
 ---
 
