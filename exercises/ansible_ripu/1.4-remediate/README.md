@@ -119,13 +119,13 @@ In the previous step, we were able to resolve an inhibitor finding by simply set
       executable: /bin/bash
   ```
 
-- You will find the tasks above in the playbook [`remediate_rhel7.yml`](https://github.com/redhat-partner-tech/leapp-project/blob/main/remediate_rhel7.yml#L21-L38). There are a few more remediation task examples in this playbook as well. The "OS / Remediate" job template is already set up to execute this playbook, so let's use it to remediate our RHEL7 hosts.
+- You will find the tasks above in the playbook [`remediate_rhel7.yml`](https://github.com/redhat-partner-tech/leapp-project/blob/main/remediate_rhel7.yml#L21-L38). There are a few more remediation task examples in this playbook as well. The "OS / Remediation" job template is already set up to execute this playbook, so let's use it to remediate our RHEL7 hosts.
 
 - Return to your AAP Web UI browser tab. Navigate to Resources > Templates on the AAP Web UI and open the "OS / Remediate" job template. Click the "Launch" button to get started.
 
 - This will bring you to the job template survey prompt. Again, choose the "rhel7" option at the "Select inventory group" prompt because our remediation playbook is specific to the pre-upgrade findings of our RHEL7 hosts. Then click the "Next" button. If you are satisfied with the job preview, use the "Launch" button to submit the job. This playbook includes only a small number of tasks and should run pretty quickly.
 
-- When the "OS / Remediate" job is finished, launch the "AUTO / 01 Analysis" job template one more time again taking care to choose the "rhel7" option at the "Select inventory group" prompt. When the job completes, go back to the RHEL Web Console of your RHEL7 host and refresh the report. You should now see there are no inhibitors:
+- When the "OS / Remediation" job is finished, launch the "AUTO / 01 Analysis" job template one more time again taking care to choose the "rhel7" option at the "Select inventory group" prompt. When the job completes, go back to the RHEL Web Console of your RHEL7 host and refresh the report. You should now see there are no inhibitors:
 
   ![Pre-upgrade report of RHEL7 host with no more inhibitors](images/rhel7_no_inhibitors.svg)
 
